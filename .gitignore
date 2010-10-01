@@ -1,0 +1,6 @@
+arm_env.mk
+toolchain
+sdk
+gcore
+gcore64
+gcore_arm
