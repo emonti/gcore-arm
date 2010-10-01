@@ -20,7 +20,9 @@
  * http://osxbook.com
  */
 
-#define PROGVERS "1.3"
+/* Patched to support ARM architecture by eric monti 9/30/2010 */
+
+#define PROGVERS "1.3.1-emonti"
 
 #define PROGNAME "gcore"
 
@@ -52,7 +54,18 @@ typedef struct {
     mach_msg_type_number_t count;
 } coredump_thread_state_flavor_t;
 
-#if defined (__ppc__)
+#if defined (__arm__)
+static coredump_thread_state_flavor_t
+thread_flavor_array[] = { 
+    { ARM_THREAD_STATE,    ARM_THREAD_STATE_COUNT    },
+    { ARM_VFP_STATE,       ARM_VFP_STATE_COUNT       },
+    { ARM_EXCEPTION_STATE, ARM_EXCEPTION_STATE_COUNT },
+    { ARM_DEBUG_STATE,     ARM_DEBUG_STATE_COUNT     },
+};
+
+static int coredump_nflavors = 4;
+
+#elif defined (__ppc__)
 
 static coredump_thread_state_flavor_t
 thread_flavor_array[] = {
