@@ -7,10 +7,11 @@ to send a quit signal and killing the target.
 
 ## Credit
 
-The original code is by Amit Singh, which he published as bonus material 
-for the book Mac OS X Internals: A Systems Approach. This is a great book 
-and you should totally get a copy if you are into mac or apple stuff at 
-all.
+The original code is by Amit Singh, which he published as bonus material for 
+his book [Mac OS X Internals: A Systems Approach](http://www.osxbook.com/). 
+
+This is a great book and you should totally get a copy if you are into 
+mac or apple stuff at all.
 
 ## Build
 
