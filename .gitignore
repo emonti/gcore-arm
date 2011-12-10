@@ -4,3 +4,4 @@ sdk
 gcore
 gcore64
 gcore_arm
+*.swp
