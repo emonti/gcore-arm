@@ -93,9 +93,9 @@ static int coredump_nflavors = 4;
 
 static coredump_thread_state_flavor_t
 thread_flavor_array[] = { 
-    { x86_THREAD_STATE32,    x86_THREAD_STATE32_COUNT    },
-    { x86_FLOAT_STATE32,     x86_FLOAT_STATE32_COUNT     },
-    { x86_EXCEPTION_STATE32, x86_EXCEPTION_STATE32_COUNT },
+    { x86_THREAD_STATE,    x86_THREAD_STATE_COUNT    },
+    { x86_FLOAT_STATE,     x86_FLOAT_STATE_COUNT     },
+    { x86_EXCEPTION_STATE, x86_EXCEPTION_STATE_COUNT },
 };
 
 static int coredump_nflavors = 3;
@@ -104,9 +104,9 @@ static int coredump_nflavors = 3;
 
 static coredump_thread_state_flavor_t
 thread_flavor_array[] = { 
-    { x86_THREAD_STATE64,    x86_THREAD_STATE64_COUNT    },
-    { x86_FLOAT_STATE64,     x86_FLOAT_STATE64_COUNT     },
-    { x86_EXCEPTION_STATE64, x86_EXCEPTION_STATE64_COUNT },
+    { x86_THREAD_STATE,    x86_THREAD_STATE_COUNT    },
+    { x86_FLOAT_STATE,     x86_FLOAT_STATE_COUNT     },
+    { x86_EXCEPTION_STATE, x86_EXCEPTION_STATE_COUNT },
 };
 
 static int coredump_nflavors = 3;
