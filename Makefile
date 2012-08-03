@@ -1,7 +1,7 @@
 include arm_env.mk
 
 # Snow Leopard has left ppc64 behind
-UNI_ARCH=-arch i386 -arch x86_64 -arch ppc #-arch ppc64 
+UNI_ARCH=-arch i386 -arch x86_64 #-arch ppc -arch ppc64 
 
 gcore: gcore_uni
 	mv gcore_uni gcore
