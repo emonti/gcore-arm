@@ -642,8 +642,10 @@ X_coredump(pid_t pid, const char *corefilename)
 
     if (is_64) {
         mh64->ncmds -= segment_count;
+        mh64->sizeofcmds -= segment_count * segment_command_sz;
     } else {
         mh->ncmds -= segment_count;
+        mh->sizeofcmds -= segment_count * segment_command_sz;
     }
 
     tir1.header      = header;
