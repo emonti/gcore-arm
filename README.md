@@ -1,8 +1,8 @@
 # OBSOLETE
 
 I am no longer maintaining this code. Changes to the iOS 5+ sdk have made this
-code obsolete on iOS. If you're trying to accomplish memory dumping on newer
-iOS platforms, you may have better luck with https://github.com/emonti/ios_vmtools
+code obsolete on iOS. I'm leaving it up only for posterity sake since a few
+folks have expressed interest in it.
 
 # gcore-arm
 
